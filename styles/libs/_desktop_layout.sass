@@ -1,0 +1,296 @@
+@media (min-width: 1024px)
+	//  header
+	.header
+		position: relative
+		width: 100%
+		height: 100vh
+		background-image: url("../images/desktop/image-hero.jpg")
+		background-size: cover
+		background-position: top center
+
+		//  navbar
+		.navbar
+			position: relative
+			padding-top: 3.125rem
+			width: 100%
+
+			// container
+			.container
+				display: flex
+				flex-flow: row nowrap
+				justify-content: space-between
+				align-items: center
+
+			//  navbar navigation
+			&__nav
+				position: relative
+				display: flex
+				justify-content: space-between
+
+				//  navigation item
+				&-item
+					&:not(:last-child)
+						margin-right: 40px
+
+				//  navigation link
+				&-link
+					text-decoration: none
+					color: $white
+					position: relative
+					width: fit-content
+					transition: all 250ms ease-in-out
+
+					//  line under the link when we hover over
+					&:after
+						content: ""
+						width: 100%
+						height: 3px
+						background-color: $white
+						position: absolute
+						bottom: -0.9375rem
+						left: -50%
+						opacity: 0
+						transition: all 250ms ease-in-out
+
+					// hover effect
+					&:hover
+						&:after
+							opacity: 1
+							left: 0
+
+			//  navbar hamburger
+			// hide the hamburger icon cause the desktop layout
+			&__hamburger
+				display: none
+
+		//  header intro
+		&__intro
+			height: 78.5%
+
+			//  container
+			.container
+				height: 100%
+				display: flex
+				justify-content: flex-start
+				align-items: center
+
+				//  intro title
+				.intro__title
+					border: 1px solid $white
+					color: $white
+					font-size: 62px
+					font-weight: normal
+					text-transform: uppercase
+					width: 550px
+					padding: 1.875rem 3.125rem 1.875rem 1.875rem
+					line-height: 3.75rem
+
+	//  main
+	.main
+
+		// section global settings
+		.section
+			position: relative
+
+			//  section title
+			&__title
+				font-family: 'Josefin Sans', sans-serif
+				text-transform: uppercase
+				font-size: 42px
+				font-weight: normal
+
+		// vr section
+		.section-vr
+			position: relative
+			margin: 9.375rem 0
+
+			//  hide mobile intro image
+			&__intro-img--mobile
+				display: none
+
+			//  show desktop intro image
+			&__intro-img--desktop
+				display: block
+				width: 60%
+
+			//  ver section description
+			&__description
+				position: absolute
+				display: flex
+				flex-flow: column wrap
+				padding: 3.875rem 0 0 3.875rem
+				width: 55%
+				right: 0
+				bottom: 0
+				background-color: $white
+
+			//  section title
+			.section__title
+				margin-bottom: 1.25rem
+
+			//  paragraph
+			&__intro-paragraph
+				color: $very-dark-gray
+				line-height: 1.675rem
+				font-family: 'Alata', sans-serif
+		// creations section
+		.section-creations
+			margin-bottom: 12.5rem
+			// section title
+			&__title
+				margin-bottom: 3.125rem
+
+			//  button
+			&__btn
+				border: none
+				outline: 1px solid $black
+				padding: .625rem 2.5rem
+				text-transform: uppercase
+				letter-spacing: 3px
+				font-size: 15px
+				background-color: $white
+				position: absolute
+				right: 0
+				top: 5px
+				transition: all 150ms ease-in-out
+				font-family: 'Josefin Sans', sans-serif
+
+				&:hover
+					background-color: $black
+					color: $white
+
+			// hide mobile grid gallery
+			&__mobile-grid-gallery
+				display: none
+
+			//  desktop grid gallery
+			&__desktop-grid-gallery
+				position: relative
+				display: grid
+				grid-template-columns: repeat(4, 1fr)
+				grid-gap: 1.25rem
+
+			//  grid gallery link
+			&__grid-gallery-link
+				position: relative
+				text-transform: uppercase
+				text-decoration: none
+				color: $white
+
+
+			//  grid gallery title
+			&__grid-gallery-title
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				background: linear-gradient(0turn, rgba(2, 2, 2, 0.6), rgba(255, 255, 255, 0))
+				font-size: 22px
+				padding: 140% 0 0 1.875rem
+				font-family: 'Josefin Sans', sans-serif
+
+				&:hover
+					background: rgba(255, 255, 255, 0.8)
+					color: $black
+
+			//  grid gallery item
+			&__grid-gallery-item-desktop
+				width: 100%
+				display: block
+
+	//  footer
+	.footer
+		position: relative
+		background-color: $black
+		color: $white
+		padding: 3.125rem 0
+
+		//  container
+		.container
+			display: flex
+			flex-flow: row wrap
+
+		// footer navbar
+		.navbar
+			flex-basis: fit-content
+
+			//  navbar navigation
+			&__nav
+				display: flex
+
+				// navigation items
+				&-item
+					margin-top: 1.25rem
+					&:not(:last-child)
+						margin-right: 1.875rem
+
+				//  navigation links
+				&-link
+					text-decoration: none
+					color: $white
+					position: relative
+					width: fit-content
+					transition: all 250ms ease-in-out
+
+					//  line under the link when we hover over
+					&:before
+						content: ""
+						width: 100%
+						height: 3px
+						background-color: $white
+						position: absolute
+						bottom: -0.9375rem
+						left: -50%
+						opacity: 0
+						transition: all 100ms ease-in-out
+
+					// hover effect
+					&:hover
+						&:before
+							opacity: 1
+							left: 0
+
+		//  footer socials
+		&__socials
+			width: fit-content
+			margin-left: auto
+			flex-basis: 50%
+			height: fit-content
+			text-align: right
+
+			//  social icons
+			&-icon
+				cursor: pointer
+
+			//  footer social links
+			&-link
+				position: relative
+
+				&:not(:last-child)
+					margin-right: 1.25rem
+
+				&:after
+					content: ""
+					width: 100%
+					height: 3px
+					background-color: $white
+					position: absolute
+					bottom: -0.9375rem
+					left: -50%
+					opacity: 0
+					transition: all 150ms ease-in-out
+
+				&:hover
+					&:after
+						opacity: 1
+						left: 0
+
+
+		//  copyright
+		&__copyright
+			margin-left: auto
+			flex-basis: 50%
+			text-align: right
+			margin-top: -1.25rem
+			color: $dark-gray

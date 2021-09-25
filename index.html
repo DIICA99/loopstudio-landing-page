@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- displays site properly based on user's device -->
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+
+    <link href="styles/style.css" rel="stylesheet">
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .footer__attribution {
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            flex-basis: 100%;
+            margin-top: 3.125rem;
+        }
+
+        .footer__attribution a {
+            /*color: hsl(228, 45%, 44%);*/
+            font-weight: bold;
+            text-decoration: none;
+            color: #8c8c8c;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header" id="header">
+    <nav class="navbar header__navbar--mobile-navbar header__navbar--desktop-navbar">
+        <div class="container">
+            <div class="navbar__brand-logo">
+                <img alt="Brand logo" class="navbar__logo" src="images/logo.svg">
+            </div>
+            <ul class="navbar__nav">
+                <li class="navbar__nav-item"><a class="navbar__nav-link" href="#">About</a></li>
+                <li class="navbar__nav-item"><a class="navbar__nav-link" href="#">Careers</a></li>
+                <li class="navbar__nav-item"><a class="navbar__nav-link" href="#">Events</a></li>
+                <li class="navbar__nav-item"><a class="navbar__nav-link" href="#">Products</a></li>
+                <li class="navbar__nav-item"><a class="navbar__nav-link" href="#">Support</a></li>
+            </ul>
+            <div class="navbar__hamburger">
+                <span class="navbar__hamburger-bar"></span>
+                <span class="navbar__hamburger-bar"></span>
+                <span class="navbar__hamburger-bar"></span>
+            </div>
+        </div>
+    </nav>
+    <div class="header__intro">
+        <div class="container">
+            <h1 class="intro__title">Immersive experiences that <br> deliver</h1>
+        </div>
+    </div>
+</header>
+
+<main class="main" id="main">
+    <div class="container">
+        <section class="section section-vr">
+            <img alt="Intro image of virtual reality" class="section-vr__intro-img--desktop"
+                 src="images/desktop/image-interactive.jpg">
+            <img alt="Intro image of virtual reality" class="section-vr__intro-img--mobile"
+                 src="images/mobile/image-interactive.jpg">
+            <div class="section-vr__description">
+                <h2 class="section__title">The leader in interactive VR</h2>
+                <p class="section-vr__intro-paragraph">Founded in 2011, Loopstudios has
+                    been producing
+                    world-class virtual reality
+                    projects for some of the best companies around the globe. Our award-winning
+                    creations have transformed businesses through digital experiences that bind
+                    to their brand.</p>
+            </div>
+        </section>
+        <section class="section section-creations">
+            <h2 class="section__title section-creations__title">Our creations</h2>
+            <button class="btn section-creations__btn">See all</button>
+            <div class="section-creations__grid-gallery section-creations__desktop-grid-gallery">
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Deep <br>earth</p>
+                    <img alt="Deep Earth"
+                         class="section-creations__grid-gallery-item-desktop"
+                         src="images/desktop/image-deep-earth.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Night <br>arcade</p>
+                    <img alt="Night Arcade"
+                         class="section-creations__grid-gallery-item-desktop"
+                         src="images/desktop/image-night-arcade.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Soccer <br>team VR</p>
+                    <img alt="Soccer Team"
+                         class="section-creations__grid-gallery-item-desktop"
+                         src="images/desktop/image-soccer-team.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">The <br>grid</p>
+                    <img alt="The Grid"
+                         class="section-creations__grid-gallery-item-desktop"
+                         src="images/desktop/image-grid.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">From up <br>above VR</p>
+                    <img alt="Up Above" class="section-creations__grid-gallery-item-desktop"
+                         src="images/desktop/image-from-above.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Pocket <br>borealis</p>
+                    <img alt="Pocket" class="section-creations__grid-gallery-item-desktop"
+                         src="images/desktop/image-pocket-borealis.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">The <br>curiosity</p>
+                    <img alt="The Curiosity"
+                         class="section-creations__grid-gallery-item-desktop"
+                         src="images/desktop/image-curiosity.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Make it <br>fisheye</p>
+                    <img alt="Massive Fisheye"
+                         class="section-creations__grid-gallery-item-desktop"
+                         src="images/desktop/image-fisheye.jpg">
+                </a>
+            </div>
+            <div class="section-creations__grid-gallery section-creations__mobile-grid-gallery">
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Deep <br>earth</p>
+                    <img alt="Deep Earth"
+                         class="section-creations__grid-gallery-item-mobile"
+                         src="images/mobile/image-deep-earth.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Night <br>arcade</p>
+                    <img alt="Night Arcade"
+                         class="section-creations__grid-gallery-item-mobile"
+                         src="images/mobile/image-night-arcade.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Soccer <br>team VR</p>
+                    <img alt="Soccer Team"
+                         class="section-creations__grid-gallery-item-mobile"
+                         src="images/mobile/image-soccer-team.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">The <br>grid</p>
+                    <img alt="The Grid"
+                         class="section-creations__grid-gallery-item-mobile"
+                         src="images/mobile/image-grid.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">From up <br>above VR</p>
+                    <img alt="Up Above" class="section-creations__grid-gallery-item-mobile"
+                         src="images/mobile/image-from-above.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Pocket <br>borealis</p>
+                    <img alt="Pocket" class="section-creations__grid-gallery-item-mobile"
+                         src="images/mobile/image-pocket-borealis.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">The <br>curiosity</p>
+                    <img alt="The Curiosity"
+                         class="section-creations__grid-gallery-item-mobile"
+                         src="images/mobile/image-curiosity.jpg">
+                </a>
+                <a class="section-creations__grid-gallery-link" href="#">
+                    <p class="section-creations__grid-gallery-title">Make it <br>fisheye</p>
+                    <img alt="Massive Fisheye"
+                         class="section-creations__grid-gallery-item-mobile"
+                         src="images/mobile/image-fisheye.jpg">
+                </a>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <nav class="navbar navbar__dektop-nav">
+            <div class="navbar__brand-logo">
+                <img alt="Brand logo" class="navbar__logo" src="images/logo.svg">
+            </div>
+            <ul class="navbar__nav">
+                <li class="navbar__nav-item navbar__nav-item--first"><a class="navbar__nav-link" href="#">About</a></li>
+                <li class="navbar__nav-item"><a class="navbar__nav-link" href="#">Careers</a></li>
+                <li class="navbar__nav-item"><a class="navbar__nav-link" href="#">Events</a></li>
+                <li class="navbar__nav-item"><a class="navbar__nav-link" href="#">Products</a></li>
+                <li class="navbar__nav-item navbar__nav-item-last"><a class="navbar__nav-link" href="#">Support</a></li>
+            </ul>
+        </nav>
+        <div class="footer__socials">
+            <a class="footer__socials-link" href="#"><img alt="Facebook icon" class="footer__socials-icon"
+                                                         src="images/icon-facebook.svg"></a>
+            <a class="footer__socials-link" href="#"><img alt="Twitter icon" class="footer__socials-icon"
+                                                         src="images/icon-twitter.svg"></a>
+            <a class="footer__socials-link" href="#"><img alt="Pinterest icon" class="footer__socials-icon"
+                                                         src="images/icon-pinterest.svg"></a>
+            <a class="footer__socials-link" href="#"><img alt="Instagram icon" class="footer__socials-icon"
+                                                         src="images/icon-instagram.svg"></a>
+        </div>
+        <p class="footer__copyright">
+            © 2021 Loopstudios. All rights reserved
+        </p>
+        <div class="footer__attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/DIICA99">Diica99</a>.
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

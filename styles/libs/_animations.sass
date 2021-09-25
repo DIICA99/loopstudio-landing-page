@@ -1,0 +1,24 @@
+//  fade in animation
+@keyframes fade-in
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+//  fade out animation
+@keyframes fade-out
+	from
+		opacity: 1
+	to
+		opacity: 0
+
+
+//  helper class
+
+//  fade in animation
+.fade-in
+	animation: fade-in 100ms cubic-bezier(.37,0,1,0) forwards
+
+//  fade out animation
+.fade-out
+	animation: fade-out 100ms cubic-bezier(.37,0,1,0) forwards
